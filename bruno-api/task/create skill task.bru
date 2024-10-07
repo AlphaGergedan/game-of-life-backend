@@ -1,0 +1,25 @@
+meta {
+  name: create skill task
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3000/api/skills/:id/tasks
+  body: formUrlEncoded
+  auth: none
+}
+
+params:path {
+  id: 1
+}
+
+headers {
+  Content-Type: application/x-www-form-urlencoded
+}
+
+body:form-urlencoded {
+  name: Chest day
+  description: Make a good chest day
+  completed: 0
+}

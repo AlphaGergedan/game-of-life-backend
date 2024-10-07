@@ -1,0 +1,25 @@
+meta {
+  name: create character skill
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/api/characters/:id/skills
+  body: formUrlEncoded
+  auth: none
+}
+
+params:path {
+  id: 1
+}
+
+headers {
+  Content-Type: application/x-www-form-urlencoded
+}
+
+body:form-urlencoded {
+  name: Fitness
+  progress: 0
+  level: 1
+}

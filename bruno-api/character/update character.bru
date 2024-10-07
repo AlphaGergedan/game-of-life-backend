@@ -1,0 +1,26 @@
+meta {
+  name: update character
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://localhost:3000/api/characters/:id
+  body: formUrlEncoded
+  auth: none
+}
+
+params:path {
+  id: 1
+}
+
+headers {
+  Content-Type: application/x-www-form-urlencoded
+}
+
+body:form-urlencoded {
+  name: John Moe
+  avatar: updated avatar url
+  notes: updated notes
+  quote: updated quote
+}

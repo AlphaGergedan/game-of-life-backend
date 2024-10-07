@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "game of life",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
